@@ -46,48 +46,48 @@
 \WisdomSavingThrowModifier{+1}
 \CharismaSavingThrowModifier{+5}
 
-\AcrobaticsSkillModifier{0}
-\AnimalHandlingSkillModifier{+2}
-\ArcanaSkillModifier{+6}
-\AthleticsSkillModifier{+1}
-\DeceptionSkillModifier{+3}
-\HistorySkillModifier{+6}
-\InsightSkillModifier{+6}
+\AcrobaticsSkillModifier{+1}
+\AnimalHandlingSkillModifier{-1}
+\ArcanaSkillModifier{+4}
+\AthleticsSkillModifier{0}
+\DeceptionSkillModifier{+5}
+\HistorySkillModifier{+4}
+\InsightSkillModifier{-1}
 \IntimidationSkillModifier{+3}
-\InvestigationSkillModifier{+7} % +5 Observant
-\MedicineSkillModifier{+2}
+\InvestigationSkillModifier{+2} % +5 Observant
+\MedicineSkillModifier{-1}
 \NatureSkillModifier{+2}
-\PerceptionSkillModifier{+7} % +5 Observant
+\PerceptionSkillModifier{-1} % +5 Observant
 \PerformanceSkillModifier{+3}
-\PersuasionSkillModifier{+7} 
-\ReligionSkillModifier{+2}
-\SleightOfHandSkillModifier{0}
-\StealthSkillModifier{0}
-\SurvivalSkillModifier{+2}
+\PersuasionSkillModifier{+3}
+\ReligionSkillModifier{+4}
+\SleightOfHandSkillModifier{+1}
+\StealthSkillModifier{+1}
+\SurvivalSkillModifier{-1}
 
 % Prociciencies
 \StrengthProficiency{}
 \DexterityProficiency{}
-\ConstitutionProficiency{True} % Sorcerer
+\ConstitutionProficiency{}
 \IntelligenceProficiency{}
-\WisdomProficiency{}
-\CharismaProficiency{True} % Sorcerer
+\WisdomProficiency{True}   % Warlock
+\CharismaProficiency{True} % Warlock
 
 \AcrobaticsProficiency{}
 \AnimalHandlingProficiency{}
-\ArcanaProficiency{True} % Sorcerer
+\ArcanaProficiency{True}
 \AthleticsProficiency{}
-\DeceptionProficiency{}
-\HistoryProficiency{True} % Noble
-\InsightProficiency{True} % Sorcerer
+\DeceptionProficiency{True}
+\HistoryProficiency{True}
+\InsightProficiency{}
 \IntimidationProficiency{}
 \InvestigationProficiency{}
 \MedicineProficiency{}
 \NatureProficiency{}
 \PerceptionProficiency{}
 \PerformanceProficiency{}
-\PersuasionProficiency{True} % Noble
-\ReligionProficiency{}
+\PersuasionProficiency{}
+\ReligionProficiency{True}
 \SleightOfHandProficiency{}
 \StealthProficiency{}
 
@@ -95,14 +95,14 @@
 \Proficiency{+4}
 \Perception{17} %+5 Observant
 
-\ArmorClass{13}
-\Initiative{0}
+\ArmorClass{12}
+\Initiative{+1}
 \Speed{30ft}
-\MaxHitPoints{76}
-\CurrentHitPoints{76}
+\MaxHitPoints{17}
+\CurrentHitPoints{  }
 \TemporaryHitPoints{}
-\MaxHitDice{11d6}
-\CurrentHitDice{11d6}
+\MaxHitDice{2d8}
+\CurrentHitDice{  }
 
 \CP{}
 \SP{}
@@ -111,35 +111,39 @@
 \PP{}
 
 
-\AddWeapon{Dagger}{+5}{1d4+1 p}
-\AddWeapon{Light Crossbow}{+4}{1d8 p}
-\AddWeapon{Stiletto Dagger}{+5}{1d3 p}
+\AddWeapon{Dagger}{+3}{1d4+1 p}
+\AddWeapon{Eldritch Blast}{+5}{1d10+3 f}
+\AddWeapon{Unarmed Strike}{+2}{1 b}
 
 \AttacksAdditional{
-\textbf{Arcane Focus:}\\A glass orb filled with moving smoke, known as Dagmar\\
-\textbf{Stiletto Dagger:}\\Advantage on stealth checks to conceal\\
-\textbf{Resistances:}\\Ice and Fire damage\\
+\textbf{Dark One’s Blessing:}\\When you reduce a hostile creature to 0 HP, you gain 5 temp HP.\\
+\textbf{    }\\    \\
 }
 
 \OtherProficienciesLanguages{
-\textbf{Languages:}\\Common, Draconic, Undercommon, Celestial\\
-\textbf{Armor:}\\None\\
-\textbf{Weapons:}\\Daggers, darts, slings, quarterstaffs, light crossbows\\
-\textbf{Tools:}\\Jeweller's tools
+\textbf{Lingue:}\\Comune, Elfico, Gnomico, Infernale\\
+\textbf{Armor:}\\Armature leggere\\
+\textbf{Armi:}\\(Simple weapons) Daggers, darts, slings, quarterstaffs, light crossbows\\
+\textbf{Tools:}\\...
 }
 
 \Equipment{
-20 crossbow bolts,
-a backpack,
-a bedrool,
-a mess kit,
-a tinderbox,
-10 torches,
-10 days of rations,
-a waterskin,
-50 ft hempen rope,
-Jeweller's tools,
-Gilbmarrow's map of Northern Gulala
+Cuoio,
+2x Pugnale,
+Sickle (falcetto),
+Balestra leggera,
+20x quadrelli per balestra,
+backpack,
+bedrool,
+vestiti (comuni),
+pouch,
+orb (arcane focus),
+libro,
+2x Inchiostro (1 ounce),
+Penna,
+10x Foglio di pergamena,
+Sacchetto con sabbia,
+Piccolo coltello
 }
 
 \PersonalityTraits{
@@ -159,108 +163,106 @@ My noble upbringing and demeanour makes it hard for me to connect with people, a
 }
 
 \FeaturesTraits{
-\textbf{Font of Magic}
+\textbf{Otherworldly Patron}
 \begin{itemize}
-  \item Sorcery Points (11)
-  \item Flexible Casting
+  \item You have struck a bargain with an otherworldly being.
 \end{itemize}
-\textbf{Metamagic}
+\textbf{Pact Magic}
 \begin{itemize}
-  \item Heightened Spell
-  \item Twinned Spell
-  \item Quickened Spell
+  \item You can cast known warlock spells using CHA as your spellcasting modifier (Spell DC 13, Spell Attack +5). You can use an arcane focus as a spellcasting focus.
 \end{itemize}
-\textbf{Draconic Bloodline}
+\textbf{Dark One’s Blessing}
 \begin{itemize}
-  \item Dragon Ancestor
-  \item Draconic Resilience
-  \item Elemental Affinity
+  \item When you reduce a hostile creature to 0 HP, you gain 5 temp HP.
 \end{itemize}
-\textbf{Noble}
+\textbf{Eldritch Invocations}
 \begin{itemize}
-  \item Position of Privilege
+  \item Agonizing Blast: When you cast eldritch blast, add +3 to the damage it deals on a hit.
+  \item Armor of Shadows: When you cast eldritch blast, add +3 to the damage it deals on a hit (già incluso).
 \end{itemize}
-\textbf{Feats}
+\textbf{Darkvision}
 \begin{itemize}
-  \item Observant
-  \item Spell Sniper
+  \item You can see in darkness (shades of gray) up to 60 ft.
 \end{itemize}
-\textbf{Magical Items}
+\textbf{Hellish Resistance}
 \begin{itemize}
-  \item Ring of Mind Shielding
-  \item Wand of Web (7)
-  \item Stiletto Dagger
-  \item Ring of Fire Resistance (loaned)
+  \item You have resistance to fire damage.
+\end{itemize}
+\textbf{Infernal Legacy}
+\begin{itemize}
+  \item You know the thaumaturgy cantrip. [3rd] You can cast hellish rebuke (2nd) once per long rest. [5th] You can cast darkness once per long rest. CHA is your spellcasting ability.
 \end{itemize}
 }
 
 % Appearance
 
-\Age{24}
-\Height{5'3"}
-\Weight{90lbs}
-\Eyes{Green}
-\Skin{Reflective}
-\Hair{Short brown}
+\Age{  }
+\Height{   }
+\Weight{   }
+\Eyes{    }
+\Skin{   }
+\Hair{   }
 
 % background
 
 \CharacterAppearance{
-The character is short and stout. With small arms. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictumst quisque sagittis purus sit. Mattis nunc sed blandit libero volutpat sed cras ornare. Blandit cursus risus at ultrices mi tempus imperdiet. Et netus et malesuada fames ac turpis egestas maecenas. Nibh cras pulvinar mattis nunc sed blandit. Varius vel pharetra vel turpis nunc eget lorem dolor.
+
 }
 \AdditionalFeaturesAndTraits{
-Capable of rolling around like a regular orb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictumst quisque sagittis purus sit. Mattis nunc sed blandit libero volutpat sed cras ornare. Blandit cursus risus at ultrices mi tempus imperdiet. Et netus et malesuada fames ac turpis egestas maecenas. Nibh cras pulvinar mattis nunc sed blandit. Varius vel pharetra vel turpis nunc eget lorem dolor. Tellus orci ac auctor augue. Nulla aliquet enim tortor at auctor urna nunc id cursus. A condimentum vitae sapien pellentesque habitant morbi tristique. Viverra suspendisse potenti nullam ac tortor. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nisl condimentum id venenatis a. Dui nunc mattis enim ut tellus elementum sagittis.
+
 }
 \Characterbackground{
-Born of a volcanic eruption this orb. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictumst quisque sagittis purus sit. Mattis nunc sed blandit libero volutpat sed cras ornare. Blandit cursus risus at ultrices mi tempus imperdiet. Et netus et malesuada fames ac turpis egestas maecenas. Nibh cras pulvinar mattis nunc sed blandit. Varius vel pharetra vel turpis nunc eget lorem dolor. Tellus orci ac auctor augue. Nulla aliquet enim tortor at auctor urna nunc id cursus. A condimentum vitae sapien pellentesque habitant morbi tristique. Viverra suspendisse potenti nullam ac tortor. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nisl condimentum id venenatis a. Dui nunc mattis enim ut tellus elementum sagittis.
+You spent years learning the lore of the multiverse. You scoured manuscripts, studied scrolls, and listened to the greatest experts on the subjects that interest you. Your efforts have made you a master researcher.
 }
 \Treasure{
-A small pouch with a single silve piece. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictumst quisque sagittis purus sit. Mattis nunc sed blandit libero volutpat sed cras ornare. Blandit cursus risus at ultrices mi tempus imperdiet. Et netus et malesuada fames ac turpis egestas maecenas. Nibh cras pulvinar mattis nunc sed blandit. Varius vel pharetra vel turpis nunc eget lorem dolor. Tellus orci ac auctor augue. Nulla aliquet enim tortor at auctor urna nunc id cursus. A condimentum vitae sapien pellentesque habitant morbi tristique. Viverra suspendisse potenti nullam ac tortor. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Nisl condimentum id venenatis a. Dui nunc mattis enim ut tellus elementum sagittis.
+
 }
 \AlliesAndOrganizations{
-Allied with the cult of the dragon. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nullam eget felis eget nunc lobortis mattis aliquam faucibus. Dictumst quisque sagittis purus sit. Mattis nunc sed blandit libero volutpat sed cras ornare. Blandit cursus risus at ultrices mi tempus imperdiet. Et netus et malesuada fames ac turpis egestas maecenas. Nibh cras pulvinar mattis nunc sed blandit. Varius vel pharetra vel turpis nunc eget lorem dolor. Tellus orci ac auctor augue. Nulla aliquet enim tortor at auctor urna nunc id cursus. A condimentum vitae sapien pellentesque habitant morbi tristique.
+
 }
-\OrganizationName{Church of The Dragon}
+\OrganizationName{  }
 
 % Magic
 
-\SpellcastingClass{Sorcerer}
+\SpellcastingClass{Warlock}
 \SpellcastingAbility{CHA}
-\SpellSaveDC{15}
-\SpellAttackBonus{+7}
+\SpellSaveDC{13}
+\SpellAttackBonus{+5}
 
-\CantripSlotA{Chill Touch (V, S)}
-\CantripSlotB{Eldrich Blast (V, S) (Spell Sniper)}
-\CantripSlotC{Light (V, M)}
+\CantripSlotA{Eldritch Blast (V, S)}
+\CantripSlotB{Prestidigitation (V, S), D: 1h}
+\CantripSlotC{Thaumaturgy (V), D: 1m}
 \CantripSlotD{Mage Hand (V, S)}
-\CantripSlotE{Message (V, S, M)}
-\CantripSlotF{Mending (V, S, M)}
-\CantripSlotG{Ray of Frost (V, S)}
+\CantripSlotE{ }
+\CantripSlotF{ }
+\CantripSlotG{ }
 
-\FirstLevelSpellSlotsTotal{4}
-\FirstLevelSpellSlotA{False Life (V, S, M)}
-\FirstLevelSpellSlotB{Magic Missile (V, S)}
+\FirstLevelSpellSlotsTotal{2}
+\FirstLevelSpellSlotA{Charm Person (V, S), D: 1h}
+\FirstLevelSpellSlotB{Witch Bolt (V, S, M)}
+\FirstLevelSpellSlotC{Burning Hands (V, S) 15ft. Cone}
+\FirstLevelSpellSlotD{Mage Armor (V, S, M), D: 8h}
 
-\SecondLevelSpellSlotsTotal{3}
-\SecondLevelSpellSlotA{Misty Step (V)}
-\SecondLevelSpellSlotB{Scorching Ray (V, S)}
-\SecondLevelSpellSlotC{Web (V, S, M (Wand of Web)}
+\SecondLevelSpellSlotsTotal{ }
+\SecondLevelSpellSlotA{ }
+\SecondLevelSpellSlotB{ }
+\SecondLevelSpellSlotC{ }
 
-\ThirdLevelSpellSlotsTotal{3}
-\ThirdLevelSpellSlotA{Lighting Bolt (V, S, M)}
+\ThirdLevelSpellSlotsTotal{ }
+\ThirdLevelSpellSlotA{ }
 
-\FourthLevelSpellSlotsTotal{3}
-\FourthLevelSpellSlotA{Blight (V, S)}
-\FourthLevelSpellSlotB{Dominate Beast (V, S)}
-\FourthLevelSpellSlotC{Greater Invisibility (V, S)}
-\FourthLevelSpellSlotD{Ice Storm (V, S, M)}
+\FourthLevelSpellSlotsTotal{ }
+\FourthLevelSpellSlotA{ }
+\FourthLevelSpellSlotB{  }
+\FourthLevelSpellSlotC{  }
+\FourthLevelSpellSlotD{  }
 
-\FifthLevelSpellSlotsTotal{2}
-\FifthLevelSpellSlotA{Telekinesis (V, S)}
+\FifthLevelSpellSlotsTotal{ }
+\FifthLevelSpellSlotA{ }
 
-\SixthLevelSpellSlotsTotal{1}
-\SixthLevelSpellSlotA{Investiture of Ice (V, S)}
-\SixthLevelSpellSlotB{Chain Lightning (V, S, M)}
+\SixthLevelSpellSlotsTotal{ }
+\SixthLevelSpellSlotA{   }
+\SixthLevelSpellSlotB{   }
 
 \begin{document}
 \newgeometry{left=0cm,right=0cm,top=0cm,bottom=0cm}
